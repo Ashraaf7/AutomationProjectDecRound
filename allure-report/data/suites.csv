@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Wed Dec 06 21:06:37 EET 2023","Wed Dec 06 21:06:38 EET 2023","954","Default Suite","AutomationProject","Tests.TC01_LoginTest","Tests.TC01_LoginTest","validLoginTC","validLoginTC",""

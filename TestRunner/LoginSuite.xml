@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Login Suite">
+    <test name="Login Test">
+        <classes>
+            <class name="Tests.TC01_LoginTest">
+                <methods>
+                    <include name="validLoginTC"/>
+                    <include name="invalidLoginWithWrongUsernameTC"/>
+                    <include name="invalidLoginWithWrongPasswordTC"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
