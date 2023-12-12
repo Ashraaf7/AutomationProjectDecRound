@@ -29,7 +29,6 @@ public class TC02_LandingTest  {
         new P01_LoginPage(getDriver())
                 .loginSteps(Utilities.getJsonData("validLoginData","username"),Utilities.getJsonData("validLoginData","password"));
         cookies = Utilities.getAllCookies(getDriver());
-
     }
 
     @BeforeMethod
