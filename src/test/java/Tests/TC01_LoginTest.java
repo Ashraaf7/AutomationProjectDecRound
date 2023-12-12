@@ -16,6 +16,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import Utilities.Utilities;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -25,10 +26,11 @@ import static DriverManager.DriverManager.*;
 @Listeners({IInvokedMethodListenerClass.class})
 public class TC01_LoginTest {
 
-
+ //condition ? true : false
     @BeforeMethod
     public void setup() throws IOException {
-        setupDriver("edge");
+        String browser = System.getProperty("browser")!= null ? System.getProperty("browser") : Utilities.getPropertyValue("browser");
+        setupDriver(browser);
         getDriver().manage().window().maximize();
         getDriver().get(Utilities.getPropertyValue("URL"));
         getDriver().manage().timeouts()
