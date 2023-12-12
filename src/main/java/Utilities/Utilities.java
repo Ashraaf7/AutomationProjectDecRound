@@ -73,6 +73,7 @@ public class Utilities {
     {
         return new WebDriverWait(driver,Duration.ofSeconds(20));
     }
+    //TODO : function for taking screenshots
     public static void takeScreenshot(WebDriver driver,String name) throws IOException {
         Screenshot screenshot = new AShot().takeScreenshot(driver);
         File finalScreenshot = new File(screenshotsPath+name+getTimestamp()+".png");
