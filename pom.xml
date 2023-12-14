@@ -15,7 +15,7 @@
     </properties>
 
     <profiles>
-        <profile>
+        <profile> 
             <id>LoginSuite</id>
             <build>
                 <plugins>
